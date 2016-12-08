@@ -7,6 +7,7 @@ class SearchMovies extends React.Component {
             <div>
                 <h1>Search Movies</h1>
                 <SearchForm />
+                <div id="ResultsTable"></div>  
             </div>
         )
     }

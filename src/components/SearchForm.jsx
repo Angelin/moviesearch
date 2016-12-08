@@ -47,7 +47,6 @@ class SearchForm extends React.Component {
         </label>
         <input type="submit" value="Submit" />
       </form>
-       <div id="ResultsTable"></div>
     );
   }
 }
