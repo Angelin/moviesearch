@@ -10,6 +10,7 @@
   "author": "Oxygen_Wave_12",
   "license": "ISC",
   "dependencies": {
+    "fixed-data-table": "^0.6.3",
     "material-ui": "^0.16.4",
     "path": "^0.12.7",
     "react": "^15.4.1",
