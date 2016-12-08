@@ -10,8 +10,9 @@
   "author": "Oxygen_Wave_12",
   "license": "ISC",
   "dependencies": {
-    "material-ui": "^0.16.4",
-    "path": "^0.12.7",
+    "fixed-data-table": "^0.6.3",
+    "material-ui": "^0.16.4"
+    "path":"^0.12.7",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-fetch": "0.0.9",

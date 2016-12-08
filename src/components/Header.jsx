@@ -1,6 +1,5 @@
 import React from 'react';
 import {IndexLink, Link} from 'react-router';
-<<<<<<< HEAD
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar'
 import FlatButton from 'material-ui/FlatButton';
@@ -48,21 +47,7 @@ class Header extends React.Component {
             
         </div>
       );
-=======
 
-class Header extends React.Component {
-    render() {
-      return (
-        <div>
-            <h1>Movie Search</h1>
-            <ul className="header">
-                <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
-                <li><Link to="/search" activeClassName="active">Search Movies</Link></li>
-                <li><Link to="/contact" activeClassName="active">Contact</Link></li>
-            </ul>
-        </div>
-      )
->>>>>>> 357832c16dac6e69f89d6ecb5ea0e9949491bdd9
     }
 }
 

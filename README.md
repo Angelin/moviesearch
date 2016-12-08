@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Movie Pedia built with MERN
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
@@ -1123,3 +1124,6 @@ There are also reports that *uninstalling* Watchman fixes the issue. So if nothi
 ## Something Missing?
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+=======
+﻿Movie Pedia built with MERN
+>>>>>>> 357832c16dac6e69f89d6ecb5ea0e9949491bdd9
