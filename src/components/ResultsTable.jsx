@@ -8,7 +8,20 @@ class ResultsRow extends React.Component {
     return (
        <TableRow>
         <TableRowColumn>{this.props.row.Title}</TableRowColumn>
+        <TableRowColumn>{this.props.row.Year}</TableRowColumn>
+        <TableRowColumn>{this.props.row.imdbID}</TableRowColumn>
+        <TableRowColumn>{this.props.row.Type}</TableRowColumn>
+        <TableRowColumn>{this.props.row.Poster}</TableRowColumn>
       </TableRow>
+    );
+  }
+}
+
+
+class ResultsHeader extends React.Component {
+  render() {
+    return (
+        <TableHeaderColumn>{this.props.column}</TableHeaderColumn>
     );
   }
 }
@@ -27,13 +40,14 @@ export default class ResultsTable extends React.Component {
 
   render (){
     console.log('rows: ',this.props.rows);
-    let rows = [],count =0;
-      this.props.rows.forEach((row,key) => {
-        if(row != ''){
+    let rows = [],count =0,headers =[];
+      this.props.rows.forEach((row) => {
+        if(headers == ''){
           let headerArr = Object.keys(row);
-
-           headers.push(<ResultsRow key={col+count++} row={row} />);
-        }
+           headerArr.forEach((header) => {
+              headers.push(<TableHeaderColumn>{header}</TableHeaderColumn>);
+           })
+        } 
         rows.push(<ResultsRow key={count++} row={row} />);
     });
     
@@ -42,7 +56,7 @@ export default class ResultsTable extends React.Component {
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHeaderColumn>{headers}</TableHeaderColumn>
+            <TableHeaderColumn><TableRow>{headers}</TableRow></TableHeaderColumn>
           </TableRow>
         </TableHeader>
         <TableBody>{rows}</TableBody>

@@ -9,9 +9,8 @@ class SearchMovies extends React.Component {
         return (
             <div>
                 <h1>Search Movies</h1>
-
                 <SearchForm />
-               
+                <div id="ResultsTable"></div>  
             </div>
         )
     }
