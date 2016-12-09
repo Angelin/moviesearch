@@ -4,7 +4,7 @@ import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme'; 
 
 
-class PaperExampleSimple extends React.Component{
+class MovieImage extends React.Component{
 getChildContext() {
     return { muiTheme: getMuiTheme(baseTheme)};
   }
@@ -33,7 +33,7 @@ getChildContext() {
       );
   }
 }
-PaperExampleSimple.childContextTypes = {
+MovieImage.childContextTypes = {
   muiTheme: React.PropTypes.object.isRequired
 }
-export default PaperExampleSimple;
+export default MovieImage;
