@@ -16,7 +16,7 @@ ReactDOM.render(
 	    <Route path="/" component={App}>
 		    <IndexRoute component={Home} />
 		    <Route path="search" component={SearchMovies} />
-		    <Route path="detail" component={MovieDetail} />
+		    <Route path="/movie/:movieId" component={MovieDetail} />
 		    <Route path="contact" component={ContactUs} />
 		    <Route path='*' component={NotFound} />
 	    </Route>
