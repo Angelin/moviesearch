@@ -3,11 +3,11 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import FlatButton from 'material-ui/FlatButton';
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';  
-import PaperExampleSimple from './Papercomponent.jsx';
+import MovieImage from './MovieImage.jsx';
 import SearchMovies from './SearchMovies.jsx';
 import Request from 'superagent'
 
-class CardExampleWithAvatar extends React.Component{
+class MovieDetail extends React.Component{
 	getChildContext() {
 		return { muiTheme: getMuiTheme(baseTheme)};
 	}
@@ -68,9 +68,9 @@ class CardExampleWithAvatar extends React.Component{
 		return (
 			<Card>
 						
-				<PaperExampleSimple poster={this.state.Poster}/>
+				<MovieImage poster={this.state.Poster}/>
 
-				<CardTitle title ={this.state.Title } />
+				<CardTitle title  ={this.state.Title } className="title"/>
 				<CardText className="data">
 				<b>RATING:</b> {this.state.Rated} <br/>
 				<b>GENRE</b>: {this.state.Genre}<br/>
@@ -92,8 +92,8 @@ class CardExampleWithAvatar extends React.Component{
 
 	}
 } 
-CardExampleWithAvatar.childContextTypes = {
+MovieDetail.childContextTypes = {
 	muiTheme: React.PropTypes.object.isRequired
 }
 
-export default CardExampleWithAvatar;
+export default MovieDetail;
