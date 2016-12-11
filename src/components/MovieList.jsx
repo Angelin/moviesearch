@@ -44,7 +44,7 @@ class MovieList extends React.Component {
 		});
 		return (
 			<Table>
-				<TableHeader>
+				<TableHeader displaySelectAll={false}>
 					<TableRow style={tableHeaderStyle}>
 						<TableHeaderColumn style={tableHeaders} >Poster</TableHeaderColumn>
 				        <TableHeaderColumn style={tableHeaders}>Name</TableHeaderColumn>
