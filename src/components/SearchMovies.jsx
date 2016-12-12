@@ -13,6 +13,7 @@ class SearchMovies extends React.Component {
     		/* initial state */ 
     		search: '',
             check: false,
+            res_stat: '',
             movies: []
     	};
         this.saveSearch = this.saveSearch.bind(this);
@@ -31,15 +32,18 @@ class SearchMovies extends React.Component {
         .query({s: this.state.search})
         .end(function (err, res) {
             var moviesList = res.body;
-            th.setState({movies: moviesList.Search});
+            console.log(moviesList.Response);
+            th.setState({res_stat: moviesList.Response});
+            if(moviesList.Response == 'True')
+                th.setState({movies: moviesList.Search});
         });
   	}
     render() {
         var temp = '';
-        if(this.state.check && this.state.movies.length>0)
+        if(this.state.check && this.state.res_stat == 'False')
+            temp = <h3>Oops! No Movies Found...</h3>;
+        else if(this.state.check && this.state.movies.length>0)
             temp = <MovieList data={this.state.movies}/>;
-        else if(this.state.check && this.state.movies.length == 0)
-            temp = <h3>Oops! No Movies...</h3>
         const divStyle = {
             textAlign: 'center'
         }
@@ -55,7 +59,9 @@ class SearchMovies extends React.Component {
                     onChange={this.saveSearch}
                 />
                 <RaisedButton label="Search" style={buttonStyle} primary={true} onClick={this.showMovies} />
-                {temp}
+                <div onLoad>
+                    {temp}
+                </div>
             </div>
         )
     }

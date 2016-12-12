@@ -1,5 +1,6 @@
 import React from 'react';
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
+import {Link} from 'react-router';
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
@@ -9,13 +10,9 @@ class MovieList extends React.Component {
 		this.state = {
 
 		};
-		this.showDetail = this.showDetail.bind(this);
 	}
 	getChildContext() {
         return { muiTheme: getMuiTheme(baseTheme)};
-    }
-    showDetail(data) {
-    	console.log(data);
     }
 	render() {
 		const imageStyle = {
@@ -37,16 +34,17 @@ class MovieList extends React.Component {
 			if(movie.Poster == 'N/A')
 				movie.Poster = './src/assets/img/image-not-available.png';
 			return (
-				<TableRow key={i} style={tableRowStyle} onClick={th.showDetail} >
+				<TableRow key={i} style={tableRowStyle} >
 					<TableRowColumn><img src={movie.Poster} style={imageStyle}/></TableRowColumn>
-					<TableRowColumn>{movie.Title}</TableRowColumn>
+					<TableRowColumn><Link to={`/movie/${movie.imdbID}`}>{movie.Title}</Link></TableRowColumn>
 					<TableRowColumn>{movie.Year.substr(0,4)}</TableRowColumn>
 					<TableRowColumn>{movie.Type}</TableRowColumn>
-				</TableRow>);
+				</TableRow>
+			);
 		});
 		return (
 			<Table>
-				<TableHeader>
+				<TableHeader displaySelectAll={false}>
 					<TableRow style={tableHeaderStyle}>
 						<TableHeaderColumn style={tableHeaders} >Poster</TableHeaderColumn>
 				        <TableHeaderColumn style={tableHeaders}>Name</TableHeaderColumn>

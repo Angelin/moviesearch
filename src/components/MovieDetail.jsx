@@ -12,53 +12,51 @@ class MovieDetail extends React.Component{
 		return { muiTheme: getMuiTheme(baseTheme)};
 	}
 	constructor(){
-        super()
-	this.state = {
-    
-    movies:{},
-    Title:"",
-    Year: "",
-    Released:"",
-    Rated:"",
-    Genre:"",
-    Director:"",
-    Writer:"",
-    Actors:"",
-    Poster:"",
-    Plot:"",
-    Language:"",
-    Country:"",
-    Awards:"",
-    imdbRating:""
-	}
-  };
+        super();
+		this.state = {
+		    movies:{},
+		    Title:"",
+		    Year: "",
+		    Released:"",
+		    Rated:"",
+		    Genre:"",
+		    Director:"",
+		    Writer:"",
+		    Actors:"",
+		    Poster:"",
+		    Plot:"",
+		    Language:"",
+		    Country:"",
+		    Awards:"",
+		    imdbRating:""
+		}
+  	};
 
 	search() {
-
-		let url =`http://www.omdbapi.com/?t=orphan`;
 		let that = this;
 		Request
-         .get(url)
-           .end(function(err, res){
+         	.get('http://www.omdbapi.com/')
+         	.query({i: that.props.params.movieId})
+           	.end(function(err, res){
 
-           console.log(res.body.Year+"hello");
-             that.setState({
-             				Title:res.body.Title,
-					         Year: res.body.Year,
-					         Rated:res.body.Rated,
-					         Released:res.body.Released,
-					         Genre:res.body.Genre,
-					         Director:res.body.Director,
-					         Writer:res.body.Writer,
-					         Actors:res.body.Actors,
-					         Poster:res.body.Poster,
-					         Plot:res.body.Plot,
-					         Language:res.body.Language,
-					         Country:res.body.Country,
-					         Awards:res.body.Awards,
-					         imdbRating:res.body.imdbRating
-     });
-   });
+           	console.log(res.body.Year+"hello");
+            that.setState({
+ 				Title:res.body.Title,
+		        Year: res.body.Year,
+		        Rated:res.body.Rated,
+		        Released:res.body.Released,
+		        Genre:res.body.Genre,
+		        Director:res.body.Director,
+		        Writer:res.body.Writer,
+		        Actors:res.body.Actors,
+		        Poster:res.body.Poster,
+		        Plot:res.body.Plot,
+		        Language:res.body.Language,
+		        Country:res.body.Country,
+		        Awards:res.body.Awards,
+		        imdbRating:res.body.imdbRating
+     		});
+   		});
 	}
 	componentDidMount() {
 		this.search();
