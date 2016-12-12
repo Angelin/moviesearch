@@ -13,7 +13,7 @@ const config = {
 		contentBase: './',
 		hot: true,
 		inline: true,
-		port: 3000,
+		port: 4000,
 		host: 'localhost'
 	}, 
 	output: {
