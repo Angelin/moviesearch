@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {Table, 
 			TableBody, 
 			TableHeader, 
@@ -9,14 +8,12 @@ import {Table,
 		} from 'material-ui/Table';
 import {Link} from 'react-router';
 
-
 export default class MovieList extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			page: ''
 		};
-
 		this.pageNum = this.pageNum.bind(this);
 	}
 	componentWillMount(){
@@ -31,7 +28,6 @@ export default class MovieList extends React.Component {
 		return page;
 	}
 	render(){
-
 		const imageStyle = {
 			height: 80,
 			width: 60

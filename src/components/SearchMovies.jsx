@@ -38,7 +38,7 @@ export default class SearchMovies extends React.Component {
         if(this.state.check && this.state.res_stat == 'False')
             temp = <h3>Oops! No Movies Found...</h3>;
         else if(this.state.check && this.state.movies.length>0)
-        temp = <MovieList data={this.state.movies} totalResults={this.state.total_res}/>;
+            temp = <MovieList data={this.state.movies} totalResults={this.state.total_res}/>;
         const divStyle = {
             textAlign: 'center'
         }
