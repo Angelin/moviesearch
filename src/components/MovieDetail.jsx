@@ -1,18 +1,13 @@
 import React from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
-import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';  
 import MovieImage from './MovieImage.jsx';
 import SearchMovies from './SearchMovies.jsx';
 import Request from 'superagent'
 
-class MovieDetail extends React.Component{
-	getChildContext() {
-		return { muiTheme: getMuiTheme(baseTheme)};
-	}
-	constructor(){
-        super();
+export default class MovieDetail extends React.Component{
+	constructor(props){
+        super(props);
 		this.state = {
 		    movies:{},
 		    Title:"",
@@ -39,7 +34,6 @@ class MovieDetail extends React.Component{
          	.query({i: that.props.params.movieId})
            	.end(function(err, res){
 
-           	console.log(res.body.Year+"hello");
             that.setState({
  				Title:res.body.Title,
 		        Year: res.body.Year,
@@ -89,9 +83,4 @@ class MovieDetail extends React.Component{
 			);
 
 	}
-} 
-MovieDetail.childContextTypes = {
-	muiTheme: React.PropTypes.object.isRequired
 }
-
-export default MovieDetail;

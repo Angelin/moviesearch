@@ -8,3 +8,22 @@ body {
 .tile{
 	font-family: 'Itim', cursive;
 }
+
+.prevIcon, .nextIcon {
+	padding: 5px;
+	border: 1px solid rgba(0,0,0,.15);
+	background-color: #ccc;
+	border-radius: 5px;
+	box-shadow: 
+}
+.prevIcon i {
+	left: -5px;
+}
+.nextIcon i {
+	right: -5px;
+}
+.prevIcon i, .nextIcon i {
+	width: 24px;
+	position: relative;
+	top: 6px;
+}

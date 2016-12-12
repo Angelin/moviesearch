@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 
-class App extends React.Component {
+export default class App extends React.Component {
     render() {
         return (
             <div>
@@ -11,10 +11,7 @@ class App extends React.Component {
                     {this.props.children}
                 </div>
                 <Footer />
-
             </div>
         )
     }
 }
-
-export default App;
