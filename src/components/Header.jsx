@@ -6,29 +6,24 @@ import FlatButton from 'material-ui/FlatButton';
 
 const navbar = {
     ul : {
-    listStyleType: "none",
-    margin: 0,
-    padding: 0,
-    overflow: 'hidden',
-  
+      listStyleType: "none",
+      margin: 0,
+      padding: 0,
+      overflow: 'hidden'
     },
-
     li : {
-    float: 'left',
-    color: 'white',
+      float: 'left',
+      color: 'white'
     },
     li2 : {
-    display: 'block',
-    color: 'white',
-    textAlign: 'center',
-    padding: '5px',
-    textDecoration: 'none',
-
+      display: 'block',
+      color: 'white',
+      textAlign: 'center',
+      padding: '5px',
+      textDecoration: 'none',
     }
-
-
-    };
-class Header extends React.Component {
+};
+export default class Header extends React.Component {
     render() {
         const nav = <div style={navbar}>
                        <ul style={navbar.ul}>
@@ -38,17 +33,10 @@ class Header extends React.Component {
                        </ul>
                     </div>
       return (
-        <div>
-            <MuiThemeProvider>
-               <AppBar
-                    title="MoviePedia"
-                    iconElementRight={nav}/>
-            </MuiThemeProvider>
-            
-        </div>
+            <AppBar
+              title="MoviePedia"
+              iconElementRight={nav}/>
       );
 
     }
 }
-
-export default Header;
