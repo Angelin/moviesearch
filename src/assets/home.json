@@ -1,0 +1,147 @@
+{
+	"india_top": {
+		"img_url": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SY150_CR0,0,101,150_AL_.jpg",
+		"news_header": "Star Wars Prequel ‘Rogue One’ Thrills Audience at World Premiere",
+		"info": {
+			"time": "8 hours",
+			"type": "Variety - Film News"
+		},
+		"news": " The force took over Hollywood on Saturday night as Disney-Lucasfilm’s Rogue One: A Star Wars Story ” premiered to wild applause at the Pantages Theatre. Celebrities and fans applauded throughout the end credits of the film, which has a running time of 2 hours and 18 minutes."
+	},
+	"hollywood": {
+		"img_url": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTExNTA2MDQ2MTdeQTJeQWpwZ15BbWU4MDU0MzAyODMx._V1._SY140_.jpg",
+		"news_header": "‘I’m a Big Fan’: Bryan Cranston Resurrects Walter White to Mock Trump’s Cabinet Picks on SNL",
+		"info": {
+			"time": "31 minutes ago",
+			"type": "PEOPLE.com"
+		},
+		"news": "Bryan Cranston returned to Saturday Night Live this weekend to help the show mock President-elect Donald Trump‘s cabinet picks — and he brought along an old friend. In the show’s cold open, Cranston returned with his iconic Breaking Bad character Walter White, who has apparently been picked by Trump to head up the DEA on the advice of Trump’s real-life chief strategist Steve Bannon. When CNN host Jake Tapper (played by Beck Bennett) asked White how he knew Bannon, the meth kingpin — sorry, science teacher — laughed and said they’ve “had some times.”"
+	},
+	"movies": {
+		"img_url": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SY150_CR0,0,101,150_AL_.jpg",
+		"news_header": "Star Wars Prequel ‘Rogue One’ Thrills Audience at World Premiere",
+		"info": {
+			"time": "8 hours",
+			"type": "Variety - Film News"
+		},
+		"news": " The force took over Hollywood on Saturday night as Disney-Lucasfilm’s Rogue One: A Star Wars Story ” premiered to wild applause at the Pantages Theatre. Celebrities and fans applauded throughout the end credits of the film, which has a running time of 2 hours and 18 minutes."
+	},
+	"celeb": {
+		"img_url": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUwODQzMDEwNl5BMl5BanBnXkFtZTgwOTcyNTAwMTE@._V1_SY150_CR49,0,101,150_AL_.jpg",
+		"news_header": "Dwayne Johnson & Jimmy Fallon Reunite Military Family On ‘Tonight Show’; Real Tears Ensue",
+		"info": {
+			"time": "3 hours",
+			"type": "DeadLive - TV"
+		},
+		"news": "Warning: real feelings to follow. Dwayne “The Rock” Johnson is involved in several efforts on behalf of veterans and on last night’s The Tonight Show  Starring Jimmy Fallon, the Moana star provided a little Christmas cheers for one vet in particular."
+	},
+	"new_upcoming": [
+		{
+			"img_url": "http://images.fandango.com/r100.9/ImageRenderer/184/271/nox.jpg/187530/images/masterrepository/fandango/187530/rogueone-posterart.jpg",
+			"title": "ROGUE ONE",
+			"caption": "A star wars story",
+			"type": "Action, Science fiction",
+			"Director": "Gareth Edwards"
+		},
+		{
+			"img_url": "http://images.fandango.com/r100.9/ImageRenderer/184/271/nox.jpg/185801/images/masterrepository/fandango/185801/moana57d7ae7e1548f.jpg",
+			"title": "Moana",
+			"caption": "monsters voyage",
+			"type": "Action, Adventure, Drama",
+			"Director": "Ron Clements, john musker"
+		},
+		{
+			"img_url": "http://images.fandango.com/r100.9/ImageRenderer/184/271/nox.jpg/175212/images/masterrepository/fandango/175212/fantasticbeasts-posterart.jpg",
+			"title": "Fantastic beasts",
+			"caption": "where to find them",
+			"type": "Action, Fantasy",
+			"Director": "Eddie Redmayne, Dan fogler"
+		},
+		{
+			"img_url": "http://images.fandango.com/r100.9/ImageRenderer/184/271/nox.jpg/186645/images/masterrepository/fandango/186645/doctorstrange-newposterart.jpg",
+			"title": "Doctor Strange",
+			"caption": "A Strange",
+			"type": "Action, Fantasy",
+			"Director": "Rachel McAdams, Chiwetal"
+		},
+		{
+			"img_url": "http://images.fandango.com/r100.9/ImageRenderer/184/271/nox.jpg/187530/images/masterrepository/fandango/187530/rogueone-posterart.jpg",
+			"title": "ROGUE ONE",
+			"caption": "A star wars story",
+			"type": "Action, Science fiction",
+			"Director": "Gareth Edwards"
+		},
+		{
+			"img_url": "http://images.fandango.com/r100.9/ImageRenderer/184/271/nox.jpg/185801/images/masterrepository/fandango/185801/moana57d7ae7e1548f.jpg",
+			"title": "Moana",
+			"caption": "monsters voyage",
+			"type": "Action, Adventure, Drama",
+			"Director": "Ron Clements, john musker"
+		},
+		{
+			"img_url": "http://images.fandango.com/r100.9/ImageRenderer/184/271/nox.jpg/175212/images/masterrepository/fandango/175212/fantasticbeasts-posterart.jpg",
+			"title": "Fantastic beasts",
+			"caption": "where to find them",
+			"type": "Action, Fantasy",
+			"Director": "Eddie Redmayne, Dan fogler"
+		},
+		{
+			"img_url": "http://images.fandango.com/r100.9/ImageRenderer/184/271/nox.jpg/186645/images/masterrepository/fandango/186645/doctorstrange-newposterart.jpg",
+			"title": "Doctor Strange",
+			"caption": "A Strange",
+			"type": "Action, Fantasy",
+			"Director": "Rachel McAdams, Chiwetal"
+		}
+	],
+	"weekend_box_office" : [
+		{
+			"img_url": "http://cps-static.rovicorp.com/2/Open/Warner_Home_Video_USA_892/Program/22730222/_9by13/_derived_jpg_q90_116x177_m0/fantastic-beasts-01.jpg",
+			"title": "Fantastic beasts where to find them",
+			"type": "Fantasy, Adventure",
+			"collection": "$74.4 million",
+			"rating" : "-239px"
+		},
+		{
+			"img_url": "http://cps-static.rovicorp.com/2/Open/20th_Century_Fox_39/Program/21013104/_2by3/_derived_jpg_q90_116x177_m0/Trolls-Poster.jpg",
+			"title": "Trolls 3",
+			"type": "Adventure, comedy",
+			"collection": "$17.4 million",
+			"rating" : "-210px"
+		},
+		{
+			"img_url": "http://cps-static.rovicorp.com/1/adg/cov75/drw200/w270/w27024phs9y.jpg",
+			"title": "Arrival",
+			"type": "Alien film",
+			"collection": "$12.1 million",
+			"rating" : "-168px"
+		},
+		{
+			"img_url": "http://cps-static.rovicorp.com/2/Open/TMDB4_2462/Program/27182716/_9by13/_derived_jpg_q90_116x177_m0/Hacksaw%20Ridge-2-3.jpg",
+			"title": "Hacksaw ridge",
+			"type": "Period film",
+			"collection": "$6.7 million",
+			"rating" : "-182px"
+		},
+		{
+			"img_url": "http://cps-static.rovicorp.com/2/Open/Warner_Brothers_360/Program/27232933/_9by13/_derived_jpg_q90_116x177_m0/27232933_TheAccountant_PA_2by3.jpg",
+			"title": "The Accountant",
+			"type": "Action Thriller",
+			"collection": "$2.2 million",
+			"rating" : "-140px"
+		},
+		{
+			"img_url": "http://cps-static.rovicorp.com/2/Open/NBC_Universal_30/Program/27077961/_9by13/_derived_jpg_q90_116x177_m0/27077961_Almost%20Christmas_PA.jpg",
+			"title": "Almost Christmas",
+			"type": "Ensemble film",
+			"collection": "$7.3 million",
+			"rating" : "-112px"
+		},
+		{
+			"img_url": "http://cps-static.rovicorp.com/2/Open/Mammoth_NYC_1957/Program/26716294/_9by13/_derived_jpg_q90_116x177_m0/Shut-In_PA_2x3.jpg",
+			"title": "Shut in",
+			"type": "Psycological Thriller",
+			"collection": "$1.6 million",
+			"rating" : "-56px"
+		}
+	]
+}
