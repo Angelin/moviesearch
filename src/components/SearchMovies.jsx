@@ -3,6 +3,7 @@ import Request from 'superagent';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import MovieList from './MovieList.jsx';
+import CircularProgress from 'material-ui/CircularProgress';
 
 export default class SearchMovies extends React.Component {
 	constructor(props) {
@@ -27,18 +28,25 @@ export default class SearchMovies extends React.Component {
         .query({s: this.state.search})
         .end(function (err, res) {
             var moviesList = res.body;
-            console.log(moviesList)
             th.setState({res_stat: moviesList.Response});
             if(moviesList.Response == 'True')
                 th.setState({movies: moviesList.Search, total_res: moviesList.totalResults});
         });
   	}
     render() {
-        var temp = '';
-        if(this.state.check && this.state.res_stat == 'False')
-            temp = <h3>Oops! No Movies Found...</h3>;
-        else if(this.state.check && this.state.movies.length>0)
-            temp = <MovieList data={this.state.movies} totalResults={this.state.total_res}/>;
+        var movie_list = '';
+        var loading = '';
+        if(this.state.check) {
+            loading = <CircularProgress size={60} thickness={5} />;
+        }
+        if(this.state.check && this.state.res_stat == 'False') {
+            loading = '';
+            movie_list = <h3>Oops! No Movies Found...</h3>;
+        }
+        else if(this.state.check && this.state.movies.length>0) {
+            loading = '';
+            movie_list = <MovieList data={this.state.movies} totalResults={this.state.total_res}/>;
+        }
         const divStyle = {
             textAlign: 'center'
         }
@@ -55,7 +63,8 @@ export default class SearchMovies extends React.Component {
                 />
                 <RaisedButton label="Search" style={buttonStyle} primary={true} onClick={this.showMovies} />
                 <div>
-                    {temp}
+                    {loading}
+                    {movie_list}
                 </div>
             </div>
         )

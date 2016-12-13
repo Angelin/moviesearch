@@ -13,6 +13,7 @@ export default class MovieList extends React.Component {
 		super(props);
 		this.state = {
 			page: ''
+		}
 		this.pageNum = this.pageNum.bind(this);
 	}
 	componentWillMount(){
